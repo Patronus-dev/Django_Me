@@ -1,5 +1,6 @@
 {% extends '_base.html' %}
 {% load static %}
+{% load crispy_forms_filters %}
 
 {% block content %}
 
@@ -90,7 +91,7 @@
                             </div>
                         </div>
                         <div class="progress-bar-linear">
-                            <p class="progress-bar-text">HTML % CSS
+                            <p class="progress-bar-text">HTML & CSS
                                 <span>45%</span>
                             </p>
                             <div class="progress-bar">
@@ -419,79 +420,6 @@
     </section>
     <!-- END RESUME -->
 
-    <!-- START TEAM -->
-    <section id="team" class="our_team section-padding">
-        <div class="container">
-            <div class="section-title text-center">
-                <h1>Team Showcase</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
-                     data-wow-offset="0">
-                    <div class="single-team">
-                        <div class="img"><img src="assets/img/team/team1.jpg" class="img-fluid" alt=""></div>
-                        <div class="team-content">
-                            <h3>Marina Mojo</h3>
-                            <p>Developer</p>
-                            <ul class="social">
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- END COL -->
-                <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                     data-wow-offset="0">
-                    <div class="single-team">
-                        <div class="img"><img src="assets/img/team/team2.jpg" class="img-fluid" alt=""></div>
-                        <div class="team-content">
-                            <h3>Ayoub Fennouni</h3>
-                            <p>Logo Expert</p>
-                            <ul class="social">
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- END COL -->
-                <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"
-                     data-wow-offset="0">
-                    <div class="single-team">
-                        <div class="img"><img src="assets/img/team/team3.jpg" class="img-fluid" alt=""></div>
-                        <div class="team-content">
-                            <h3>Mark Linomi</h3>
-                            <p>Marketer</p>
-                            <ul class="social">
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- END COL -->
-                <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"
-                     data-wow-offset="0">
-                    <div class="single-team">
-                        <div class="img"><img src="assets/img/team/team4.jpg" class="img-fluid" alt=""></div>
-                        <div class="team-content">
-                            <h3>Amira Yerden</h3>
-                            <p>UI/UX Designer</p>
-                            <ul class="social">
-                                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- END COL -->
-            </div><!-- END ROW -->
-        </div><!-- END CONTAINER -->
-    </section>
-    <!-- END TEAM -->
-
     <!-- START BLOG -->
     <section id="blog" class="blog_area section-padding">
         <div class="container">
@@ -560,7 +488,7 @@
         <div class="container">
             <div class="section-title text-center">
                 <h1>Write Your Message</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>Leave your message here, I will respond as soon as possible.</p>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-sm-12 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
@@ -568,10 +496,13 @@
                     <div class="contact">
                         <form class="form" name="enq" method="post" action="contact.php"
                               onsubmit="return validation();">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Name"
-                                           required="required">
+                                    <label>
+                                        <input type="text" name="name" class="form-control" placeholder="Name"
+                                               required="required">
+                                    </label>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <input type="email" name="email" class="form-control" placeholder="Email"
@@ -600,17 +531,17 @@
                         <div class="single_address">
                             <div class="address_br"><span class="ti-location-pin"></span></div>
                             <h4>Address</h4>
-                            <p>3481 Melrose Place, <br/>Beverly Hills</p>
+                            <p>Iran<br/>Tehran</p>
                         </div>
                         <div class="single_address">
                             <div class="address_br"><span class="ti-mobile"></span></div>
                             <h4>Phone</h4>
-                            <p>+512 513 96324</p>
+                            <p>+98 910 193 4120</p>
                         </div>
                         <div class="single_address">
                             <div class="address_br"><span class="ti-email"></span></div>
                             <h4>Email</h4>
-                            <p>example@example.com</p>
+                            <p>mehdii.dev@gmail.com</p>
                         </div>
                         <div class="single_address">
                             <div class="address_br"><span class="ti-location-pin"></span></div>
