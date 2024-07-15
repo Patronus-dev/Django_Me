@@ -1,0 +1,78 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block page_title %}Blogs{% endblock page_title %}
+
+{% block navbar %}
+
+    <!-- START NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img style="width: 25%;" src="{% static 'img/logo/Patronus-logo-dark-nav-removebg.png' %}" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-menu"></span>
+            </button>
+            <!--END BUTTON-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul id="navbar-navlist" class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
+                </ul><!--END NAVBAR NAV-->
+            </div><!--END COLLAPSE-->
+        </div><!--END CONTAINER -->
+    </nav>
+    <!-- END NAVBAR-->
+
+{% endblock navbar %}
+
+{% block content %}
+
+    <!-- START  HOME DESIGN -->
+    <section class="section-top">
+        <div class="container">
+            <div class="offset-lg-1 col-lg-10 col-xs-12 text-center">
+                <div class="section-top-title">
+                    <h1>Blogs</h1>
+                </div><!-- //.HERO-TEXT -->
+            </div><!--- END COL -->
+        </div><!--- END CONTAINER -->
+    </section>
+    <!-- END  HOME DESIGN -->
+
+    <!-- START PORTFOLIO SINGLE PROJECT -->
+    {% for blog in blogs %}
+
+        <section class="single_project_area section-padding">
+        <div class="container">
+        <div class="row project_dec">
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="media-left">
+                    <img style="width: 50%" src="{{ blog.image.url }}" class="img-fluid" alt="portfolio-image"/>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="project_details">
+                    <div class="about_project">
+                        <h4>{{ blog.title }}</h4>
+                    </div>
+                    <div class="about_project_details">
+                        <ul>
+                            <li><i class="fa fa-user"></i><b>Author : </b>{{ blog.author }}</li>
+                            <li><i class="fa fa-clock-o"></i><b>Date : </b>{{ blog.datetime_created }}</li>
+                        </ul>
+                    </div>
+                    <a class="sp_btn" href="{% url 'blog_detail' blog.id %}">Continue Reading</a>
+                </div>
+            </div><!--- END COL -->
+        </div>
+
+    {% endfor %}
+<!--- END ROW -->
+</div>
+<!--- END CONTAINER -->
+</section>
+
+    <!-- END PORTFOLIO SINGLE PROJECT -->
+
+{% endblock content %}

@@ -1,0 +1,76 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block page_title %}{{ blog.title }}{% endblock page_title %}
+
+{% block navbar %}
+
+    <!-- START NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img style="width: 25%;" src="{% static 'img/logo/Patronus-logo-dark-nav-removebg.png' %}" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-menu"></span>
+            </button>
+            <!--END BUTTON-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul id="navbar-navlist" class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'blog_list' %}">Blog</a></li>
+                </ul><!--END NAVBAR NAV-->
+            </div><!--END COLLAPSE-->
+        </div><!--END CONTAINER -->
+    </nav>
+    <!-- END NAVBAR-->
+
+{% endblock navbar %}
+
+{% block content %}
+
+
+    <!-- START PRELOADER -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+
+    <!-- START  HOME DESIGN -->
+    <section class="section-top">
+        <div class="container">
+            <div class="offset-lg-1 col-lg-10 col-xs-12 text-center">
+                <div class="section-top-title">
+                    <h1>{{ blog.title }}</h1>
+                </div>
+                <!-- //.HERO-TEXT -->
+            </div>
+            <!--- END COL -->
+        </div>
+        <!--- END CONTAINER -->
+    </section>
+    <!-- END  HOME DESIGN -->
+
+    <div class="single_blog_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-sm-12 col-xs-12">
+                    <div class="single_blog_page">
+                        <img src="{{ blog.image.url }}" class="img-fluid" alt="image"/>
+                    </div>
+                    <div>
+                        <span>{{ blog.text }}</span>
+                    </div>
+                </div>
+                <!-- END COL-->
+            </div>
+            <!-- END ROW -->
+        </div>
+        <!-- END CONTAINER -->
+    </div>
+    <!-- End MAIN CONTAINER -->
+
+{% endblock content %}
