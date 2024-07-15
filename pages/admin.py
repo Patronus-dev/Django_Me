@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ContactMessage
+
+
+@admin.register(ContactMessage)
+class ContactUsAdmin(admin.ModelAdmin):
+    model = ContactMessage
+    list_display = ('name', 'subject', 'email', 'datetime_creation', )

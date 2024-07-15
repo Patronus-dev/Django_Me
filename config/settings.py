@@ -33,10 +33,10 @@ INSTALLED_APPS = [
 
     # third party
     'crispy_forms',
+    'crispy_bootstrap5',
 
     # my apps
     'pages',
-    'contact',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +137,8 @@ EMAIL_PORT = env.int('EMAIL_PORT')
 EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS')
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+
+
+# django-crispy-forms
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
