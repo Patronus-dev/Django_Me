@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 
-{% block page_title %}{% trans 'Blog' %}{% endblock page_title %}
+{% block page_title %}{% trans 'Oops!' %}{% endblock page_title %}
 
 {% block navbar %}
 
@@ -19,7 +19,6 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul id="navbar-navlist" class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">{% trans 'Home' %}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'blog_list' %}">{% trans 'Blog' %}</a></li>
                 </ul><!--END NAVBAR NAV-->
             </div><!--END COLLAPSE-->
         </div><!--END CONTAINER -->
@@ -30,40 +29,20 @@
 
 {% block content %}
 
-
-    <!-- START PRELOADER -->
-    <div class="preloader">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-    </div>
-    <!-- END PRELOADER -->
-
-    <!-- START  HOME DESIGN -->
-    <section class="section-top">
-        <div class="container">
-            <div class="offset-lg-1 col-lg-10 col-xs-12 text-center">
-                <div class="section-top-title">
-                    <h1>{{ blog.title }}</h1>
-                </div>
-                <!-- //.HERO-TEXT -->
-            </div>
-            <!--- END COL -->
-        </div>
-        <!--- END CONTAINER -->
-    </section>
-    <!-- END  HOME DESIGN -->
-
     <div class="single_blog_area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-sm-12 col-xs-12">
-                    <div class="single_blog_page">
-                        <img src="{{ blog.image.url }}" class="img-fluid" alt="image"/>
+                    <div class="single_blog_page" style="width: fit-content ; margin: 0 auto">
+                        <img style="margin: 0 auto" src="{% static 'img/404/404-page-removebg-preview.png' %}"
+                             class="img-fluid" alt="image"/>
                     </div>
-                    <div>
-                        <span>{{ blog.text|safe }}</span>
+                    <div class="col-md-12 text-center">
+                        <a href="{% url 'home' %}">
+                            <button type="submit" name="submit" id="submitButton"
+                                    class="btn btn-lg contact_btn">{% trans 'BACK TO HOME' %}
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <!-- END COL-->
@@ -73,5 +52,6 @@
         <!-- END CONTAINER -->
     </div>
     <!-- End MAIN CONTAINER -->
+
 
 {% endblock content %}

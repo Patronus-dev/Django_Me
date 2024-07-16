@@ -1,7 +1,8 @@
 {% extends '_base.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block page_title %}Blogs{% endblock page_title %}
+{% block page_title %}{% trans 'Blog' %}{% endblock page_title %}
 
 {% block navbar %}
 
@@ -17,7 +18,7 @@
             <!--END BUTTON-->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul id="navbar-navlist" class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">{% trans 'Home' %}</a></li>
                 </ul><!--END NAVBAR NAV-->
             </div><!--END COLLAPSE-->
         </div><!--END CONTAINER -->
@@ -33,7 +34,7 @@
         <div class="container">
             <div class="offset-lg-1 col-lg-10 col-xs-12 text-center">
                 <div class="section-top-title">
-                    <h1>Blogs</h1>
+                    <h1>{% trans 'Blogs' %}</h1>
                 </div><!-- //.HERO-TEXT -->
             </div><!--- END COL -->
         </div><!--- END CONTAINER -->
@@ -58,11 +59,13 @@
                     </div>
                     <div class="about_project_details">
                         <ul>
-                            <li><i class="fa fa-user"></i><b>Author : </b>{{ blog.author }}</li>
-                            <li><i class="fa fa-clock-o"></i><b>Date : </b>{{ blog.datetime_created }}</li>
+                            <li><i class="fa fa-user"></i><b>{% trans 'Author' %} : </b>{{ blog.author }}</li>
+                            <li><i class="fa fa-user"></i><b>{% trans 'Source' %} : </b>{{ blog.source }}</li>
+                            <li><i class="fa fa-clock-o"></i><b>{% trans 'Date' %} : </b>{{ blog.datetime_created }}
+                            </li>
                         </ul>
                     </div>
-                    <a class="sp_btn" href="{% url 'blog_detail' blog.id %}">Continue Reading</a>
+                    <a class="sp_btn" href="{% url 'blog_detail' blog.id %}">{% trans 'Continue Reading' %}</a>
                 </div>
             </div><!--- END COL -->
         </div>
@@ -72,7 +75,6 @@
 </div>
 <!--- END CONTAINER -->
 </section>
-
     <!-- END PORTFOLIO SINGLE PROJECT -->
 
 {% endblock content %}

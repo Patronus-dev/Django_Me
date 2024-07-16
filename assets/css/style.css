@@ -281,6 +281,23 @@ b, strong {
 * 02.START BOOTSTRAP NAVIGATION OVERRIDES
 * ----------------------------------------------------------------------------------------
 */
+
+.language-switcher {
+    width: 15rem;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+.lang-btn {
+    color: white;
+    text-decoration: none;
+}
+
+.lang-btn:not(:last-child) {
+    margin-right: 5px;
+}
+
 .navbar-brand img {
     width: 140px;
     height: auto;
@@ -1566,6 +1583,7 @@ b, strong {
 .footer_social_profile ul li a:hover {
     background: #fff;
     color: #333;
+    margin-bottom: 5%;
 }
 
 /*END FOOTER SOCIAL DESIGN*/

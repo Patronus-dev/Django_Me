@@ -9,12 +9,16 @@ from blog.models import Blog
 
 
 class HomePageView(TemplateView):
-    template_name = 'pages/home.html'
+    template_name = 'home.html'
 
-    #  in this part , we can access to Values of app.models from home page
+    #  in this part , we can access to Values of app.models on home page
     def get_context_data(self, **kwargs):
+        #  in this part , we can access to all blogs by id
         context = super().get_context_data(**kwargs)
         context['all_blogs'] = Blog.objects.all().order_by('-id')
+        #  in this part , we can access to 3 latest post in blogs by id
+        latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+        context['latest_blogs'] = latest_blogs
         return context
 
 
@@ -34,4 +38,4 @@ def ContactCreateView(request):
             return redirect('home')
     else:
         form = ContactMessageForm()
-    return render(request, 'pages/home.html', {'form': form})
+    return render(request, 'home.html', {'form': form})

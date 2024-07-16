@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-16 21:33+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\home.html:7 .\home.html:23
+msgid "Home"
+msgstr ""
+
+#: .\home.html:24
+msgid "About"
+msgstr ""
+
+#: .\home.html:25
+msgid "Services"
+msgstr ""
+
+#: .\home.html:26 .\home.html:251
+msgid "Resume"
+msgstr ""
+
+#: .\home.html:27
+msgid "Blog"
+msgstr ""
+
+#: .\home.html:49
+msgid "I Am MEHDI"
+msgstr ""
+
+#: .\home.html:51
+msgid "WEB DEVELOPER"
+msgstr ""
+
+#: .\home.html:51
+msgid "FREELANCER"
+msgstr ""
+
+#: .\home.html:51
+msgid "BACKEND"
+msgstr ""
+
+#: .\home.html:56
+msgid "Email"
+msgstr ""
+
+#: .\home.html:59
+msgid "Phone"
+msgstr ""
+
+#: .\home.html:62
+msgid "Address"
+msgstr ""
+
+#: .\home.html:62
+msgid "Tehran"
+msgstr ""
+
+#: .\home.html:65
+msgid "Nationality"
+msgstr ""
+
+#: .\home.html:65 .\home.html:295
+msgid "Persian"
+msgstr ""
+
+#: .\home.html:78
+msgid "Profile"
+msgstr ""
+
+#: .\home.html:90
+msgid "Intro"
+msgstr ""
+
+#: .\home.html:91
+msgid "Hi, my name is Mehdi Sabz."
+msgstr ""
+
+#: .\home.html:94
+msgid ""
+"The person who build and develops websites. I am a programmer and web "
+"developer who enjoys a wide range of hobbies, such as building web "
+"applications and coding. For me, it is more like a hobby than a job."
+msgstr ""
+
+#: .\home.html:99
+msgid ""
+"I can turn Caffeine into complex programs. So either Coffee is a magic "
+"potion or I am a wizard !"
+msgstr ""
+
+#: .\home.html:104
+msgid ""
+"Django is a powerful and secure web framework for developing websites and "
+"web applications. This framework provides advanced tools and security "
+"features, enabling developers to create high-performance applications "
+"resistant to cyber attacks. With its \"batteries included\"  philosophy, "
+"Django meets all web development needs in a comprehensive package."
+msgstr ""
+
+#: .\home.html:108
+msgid "Skills"
+msgstr ""
+
+#: .\home.html:110
+msgid "Python"
+msgstr ""
+
+#: .\home.html:126 .\home.html:160
+msgid "Web Design"
+msgstr ""
+
+#: .\home.html:134
+msgid "HTML & CSS"
+msgstr ""
+
+#: .\home.html:152
+msgid "What I'm Doing"
+msgstr ""
+
+#: .\home.html:153
+msgid "I am a web developer with Python and Django."
+msgstr ""
+
+#: .\home.html:161
+msgid ""
+"Design responsive,user-friendly websites with modern aesthetics,also "
+"provides an intuitive user experience."
+msgstr ""
+
+#: .\home.html:168
+msgid "Development"
+msgstr ""
+
+#: .\home.html:169
+msgid ""
+"Create secure and scalable web applications using Python and Django,"
+"emphasizing high performance and reliability."
+msgstr ""
+
+#: .\home.html:176
+msgid "Social Media"
+msgstr ""
+
+#: .\home.html:177
+msgid ""
+"In today's world, presence on social networks as well as website has a great "
+"impact on your business and introduction to customers."
+msgstr ""
+
+#: .\home.html:184
+msgid "Branding"
+msgstr ""
+
+#: .\home.html:185
+msgid ""
+"Having a website significantly increases the visibility and credibility of "
+"the business and provides a digital storefront to the audience."
+msgstr ""
+
+#: .\home.html:192
+msgid "Strategy"
+msgstr ""
+
+#: .\home.html:193
+msgid ""
+"Focus on increasing brand awareness, creating customer engagement, and "
+"achieving business goals."
+msgstr ""
+
+#: .\home.html:200
+msgid "Consulting"
+msgstr ""
+
+#: .\home.html:201
+msgid ""
+"Tailored solutions to enhance online presence, improve user experience,and "
+"achieve business goals effectively."
+msgstr ""
+
+#: .\home.html:218
+msgid "Programming Languages"
+msgstr ""
+
+#: .\home.html:225
+msgid "Successful Project"
+msgstr ""
+
+#: .\home.html:232
+msgid "Certificates and Documents"
+msgstr ""
+
+#: .\home.html:239
+msgid "Workshops and Training"
+msgstr ""
+
+#: .\home.html:256
+msgid "Education"
+msgstr ""
+
+#: .\home.html:258
+msgid "Degrees"
+msgstr ""
+
+#: .\home.html:260
+msgid "Mathematics and physics Diploma."
+msgstr ""
+
+#: .\home.html:263
+msgid "Computer Science Diploma."
+msgstr ""
+
+#: .\home.html:266
+msgid "Programming Courses"
+msgstr ""
+
+#: .\home.html:268
+msgid "HTML & CSS certificate."
+msgstr ""
+
+#: .\home.html:269 .\home.html:275 .\home.html:280
+msgid "From"
+msgstr ""
+
+#: .\home.html:270 .\home.html:276 .\home.html:281 .\home.html:286
+msgid "Cando"
+msgstr ""
+
+#: .\home.html:271
+msgid " Computer Science Engineering institution."
+msgstr ""
+
+#: .\home.html:274
+msgid "Python Foundation Master certificate."
+msgstr ""
+
+#: .\home.html:277 .\home.html:282 .\home.html:287
+msgid "Computer Science Engineering institution."
+msgstr ""
+
+#: .\home.html:279
+msgid "Python Advanced Master certificate."
+msgstr ""
+
+#: .\home.html:284
+msgid "Django certificate."
+msgstr ""
+
+#: .\home.html:292
+msgid "About me"
+msgstr ""
+
+#: .\home.html:294
+msgid "Languages"
+msgstr ""
+
+#: .\home.html:297
+msgid "Turkish (Azerbaijan)"
+msgstr ""
+
+#: .\home.html:300
+msgid "Deutsch"
+msgstr ""
+
+#: .\home.html:303
+msgid "English"
+msgstr ""
+
+#: .\home.html:307
+msgid "Hobbies"
+msgstr ""
+
+#: .\home.html:308
+msgid "Traveling"
+msgstr ""
+
+#: .\home.html:309
+msgid "Gaming"
+msgstr ""
+
+#: .\home.html:310
+msgid "Meeting Family & Friends"
+msgstr ""
+
+#: .\home.html:311
+msgid "Music"
+msgstr ""
+
+#: .\home.html:312
+msgid "Pets"
+msgstr ""
+
+#: .\home.html:315
+msgid "Other Skills"
+msgstr ""
+
+#: .\home.html:316
+msgid "2019 to Present"
+msgstr ""
+
+#: .\home.html:317
+msgid "- Accountant"
+msgstr ""
+
+#: .\home.html:318
+msgid "Working as an accountant in a private company."
+msgstr ""
+
+#: .\home.html:332
+msgid "Latest blogs"
+msgstr ""
+
+#: .\home.html:348
+msgid "Continue Reading"
+msgstr ""
+
+#: .\home.html:358
+msgid "See more ..."
+msgstr ""

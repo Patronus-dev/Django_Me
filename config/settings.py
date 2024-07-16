@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # third party
+    'rosetta',
     'crispy_forms',
     'crispy_bootstrap5',
     'ckeditor',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     # my apps
     'pages',
     'blog',
+    'language'
 ]
 
 MIDDLEWARE = [
@@ -114,12 +116,21 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+LOCALE_PATHS = (
+    'templates/locale',
+)
+
+LANGUAGES = (
+    ('en', 'English'),
+    ('de', 'Deutsch'),
+    ('fa', 'Persian'),
+)
+
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
-
+USE_L10N = True
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
