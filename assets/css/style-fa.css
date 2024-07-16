@@ -1,0 +1,245 @@
+/* style-fa.css */
+
+body {
+    color: #bdbec1;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    background: #191A1C;
+    overflow-x: hidden;
+    background-size: cover;
+    direction: rtl;
+    text-align: right;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0px;
+    margin-top: 0px;
+    font-family: 'Tahoma', sans-serif; /* تغییر فونت به یک فونت مناسب فارسی */
+    color: #fff;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Tahoma', sans-serif; /* تغییر فونت به یک فونت مناسب فارسی */
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #191A1C;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    font-size: 10px;
+    text-indent: -12345px;
+    z-index: 10000;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+.no-padding {
+    padding: 0
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+/*END PRELOADER DESIGN*/
+.section-padding {
+    padding: 80px 0
+}
+
+/*START SECTION TITLE DESIGN*/
+.section-title {
+    margin-bottom: 60px
+}
+
+.section-title h1 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*END SECTION TITLE DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+    background: #f0bb62 none repeat scroll 0 0;
+    border-radius: 30px;
+    bottom: 5px;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    height: 50px;
+    line-height: 47px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    position: fixed;
+    left: 5px; /* تغییر موقعیت به سمت چپ برای فارسی */
+    text-align: center;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    width: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .topcontrol {
+        display: none;
+    }
+}
+
+.topcontrol:hover {
+    background: #fff;
+    color: #1b2032;
+}
+
+/*END SCROLL TO TOP*/
+/*START SOCIAL PROFILE CSS*/
+.social_profile {
+    position: fixed;
+    top: 30%;
+    left: 0; /* تغییر موقعیت به سمت چپ برای فارسی */
+}
+
+@media only screen and (max-width: 480px) {
+    .social_profile {
+        top: 40%;
+    }
+}
+
+.social_profile ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.social_profile ul li {
+    display: inline;
+}
+
+.social_profile ul li a {
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px; /* تغییر فاصله برای فارسی */
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 880px) {
+    .social_profile {
+        display: none;
+    }
+}
+
+.social_profile ul li a:hover {
+    color: #fff;
+}

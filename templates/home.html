@@ -21,23 +21,23 @@
             <!--END BUTTON-->
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
-            <!--START LANGUAGES SWITCHER-->
-            <div class="language-switcher">
-                <a href="{% url 'set_language' %}?language=en"
-                   class="lang-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}">English</a> |
-                <a href="{% url 'set_language' %}?language=de"
-                   class="lang-btn {% if request.LANGUAGE_CODE == 'de' %}active{% endif %}">Deutsch</a> |
-                <a href="{% url 'set_language' %}?language=fa"
-                   class="lang-btn {% if request.LANGUAGE_CODE == 'fa' %}active{% endif %}">فارسی</a>
-            </div>
-            <!--END LANGUAGES SWITCHER-->
+                <!--START LANGUAGES SWITCHER-->
+                <div class="language-switcher">
+                    <a href="{% url 'set_language' %}?language=en"
+                       class="lang-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}">English</a> |
+                    <a href="{% url 'set_language' %}?language=de"
+                       class="lang-btn {% if request.LANGUAGE_CODE == 'de' %}active{% endif %}">Deutsch</a> |
+                    <a href="{% url 'set_language' %}?language=fa"
+                       class="lang-btn {% if request.LANGUAGE_CODE == 'fa' %}active{% endif %}">فارسی</a>
+                </div>
+                <!--END LANGUAGES SWITCHER-->
 
                 <ul id="navbar-navlist" class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">{% trans 'Home' %}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">{% trans 'About' %}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#service">{% trans 'Services' %}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resume">{% trans 'Resume' %}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog">{% trans 'Blog' %}</a></li>
+                    <li  class="nav-item"><a class="nav-link active" href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+                    <li style="width: 6rem" class="nav-item"><a class="nav-link" href="#about">{% trans 'About' %}</a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#service">{% trans 'Services' %}</a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#resume">{% trans 'Resume' %}</a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#blog">{% trans 'Blog' %}</a></li>
                 </ul>
                 <!--END NAVBAR NAV-->
             </div>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <div class="progress-bar-linear">
-                            <p class="progress-bar-text">Django
+                            <p class="progress-bar-text">{% trans 'Django' %}
                                 <span>60%</span>
                             </p>
                             <div class="progress-bar">
@@ -296,7 +296,7 @@
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
                         <span class="active_year">2023</span>
                         <span class="active_company">- {% trans 'Django certificate.' %}</span>
-                        <p>From <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
+                        <p>{% trans 'From' %} <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
                     </div>
@@ -306,7 +306,7 @@
                     <h4 class="timeline_title">{% trans 'About me' %}</h4>
                     <div class="single_timeline">
                         <h4>{% trans 'Languages' %}</h4>
-                        <span class="active_company">{% trans 'Persian' %}</span><br>
+                        <span class="active_company">{% trans 'Persian ' %}</span><br>
                         <img class="flag-icons" src="{% static 'img/icons/Azerbaijan.png' %}" alt="">
                         <span class="active_company">{% trans 'Turkish (Azerbaijan)' %}</span>
                         <br>

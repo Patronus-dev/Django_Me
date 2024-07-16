@@ -27,15 +27,16 @@ Version      : 1.0
 */
 body {
     color: #bdbec1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
     background: #191A1C;
     overflow-x: hidden;
     background-size: cover;
+    direction: rtl;
+    text-align: right;
 }
-
 
 html,
 body {
@@ -51,7 +52,7 @@ h5,
 h6 {
     letter-spacing: 0px;
     margin-top: 0px;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Tahoma', sans-serif; /* تغییر فونت به یک فونت مناسب فارسی */
     color: #fff;
     font-weight: 400;
 }

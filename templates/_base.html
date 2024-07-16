@@ -2,7 +2,8 @@
 {% load i18n %}
 
 <!DOCTYPE html>
-<html lang="en">
+{% get_current_language as current_language %}
+<html lang="{{ current_language }}">
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -36,9 +37,14 @@
     <!-- animate CSS -->
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <!-- Style CSS -->
+    <!-- Persian Style CSS -->
+    {% if request.LANGUAGE_CODE == 'fa' %}
+        <link rel="stylesheet" href="{% static 'css/style-fa.css' %}">
+    {% endif %}
     <link rel="stylesheet" href="{% static 'css/magic-mouse.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -75,7 +81,8 @@
                     <div class="footer_social_profile">
                         <ul>
                             <li><a target="_blank" href="https://www.instagram.com/_mehdisabz_">Instagram</a></li>
-                            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=+989101934120">Whatsapp</a></li>
+                            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=+989101934120">Whatsapp</a>
+                            </li>
                             <li><a target="_blank" href="https://t.me/mhdi_dev">Telegram</a></li>
                             <li><a target="_blank" href="mailto:mehdii.dev@gmail.com">E-Mail</a></li>
                             <li><a target="_blank" href="https://github.com/Patronus-dev">Github</a></li>

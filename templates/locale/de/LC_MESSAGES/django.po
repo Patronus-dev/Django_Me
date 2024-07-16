@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-16 21:33+0330\n"
+"POT-Creation-Date: 2024-07-17 00:33+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\home.html:7 .\home.html:23
+#: .\home.html:7 .\home.html:36
 msgid "Home"
 msgstr ""
 
-#: .\home.html:24
+#: .\home.html:37
 msgid "About"
 msgstr ""
 
-#: .\home.html:25
+#: .\home.html:38
 msgid "Services"
 msgstr ""
 
-#: .\home.html:26 .\home.html:251
+#: .\home.html:39 .\home.html:265
 msgid "Resume"
 msgstr ""
 
-#: .\home.html:27
+#: .\home.html:40
 msgid "Blog"
 msgstr ""
 
-#: .\home.html:49
+#: .\home.html:62
 msgid "I Am MEHDI"
 msgstr ""
 
-#: .\home.html:51
+#: .\home.html:64
 msgid "WEB DEVELOPER"
 msgstr ""
 
-#: .\home.html:51
+#: .\home.html:64
 msgid "FREELANCER"
 msgstr ""
 
-#: .\home.html:51
+#: .\home.html:64
 msgid "BACKEND"
 msgstr ""
 
-#: .\home.html:56
+#: .\home.html:69
 msgid "Email"
 msgstr ""
 
-#: .\home.html:59
+#: .\home.html:72
 msgid "Phone"
 msgstr ""
 
-#: .\home.html:62
+#: .\home.html:75
 msgid "Address"
 msgstr ""
 
-#: .\home.html:62
+#: .\home.html:75
 msgid "Tehran"
 msgstr ""
 
-#: .\home.html:65
+#: .\home.html:78
 msgid "Nationality"
 msgstr ""
 
-#: .\home.html:65 .\home.html:295
+#: .\home.html:78
 msgid "Persian"
 msgstr ""
 
-#: .\home.html:78
+#: .\home.html:91
 msgid "Profile"
 msgstr ""
 
-#: .\home.html:90
+#: .\home.html:104
 msgid "Intro"
 msgstr ""
 
-#: .\home.html:91
+#: .\home.html:105
 msgid "Hi, my name is Mehdi Sabz."
 msgstr ""
 
-#: .\home.html:94
+#: .\home.html:108
 msgid ""
 "The person who build and develops websites. I am a programmer and web "
 "developer who enjoys a wide range of hobbies, such as building web "
 "applications and coding. For me, it is more like a hobby than a job."
 msgstr ""
 
-#: .\home.html:99
+#: .\home.html:113
 msgid ""
 "I can turn Caffeine into complex programs. So either Coffee is a magic "
 "potion or I am a wizard !"
 msgstr ""
 
-#: .\home.html:104
+#: .\home.html:118
 msgid ""
 "Django is a powerful and secure web framework for developing websites and "
 "web applications. This framework provides advanced tools and security "
@@ -111,222 +111,230 @@ msgid ""
 "Django meets all web development needs in a comprehensive package."
 msgstr ""
 
-#: .\home.html:108
+#: .\home.html:122
 msgid "Skills"
 msgstr ""
 
-#: .\home.html:110
+#: .\home.html:124
 msgid "Python"
 msgstr ""
 
-#: .\home.html:126 .\home.html:160
+#: .\home.html:132
+msgid "Django"
+msgstr ""
+
+#: .\home.html:140 .\home.html:174
 msgid "Web Design"
 msgstr ""
 
-#: .\home.html:134
+#: .\home.html:148
 msgid "HTML & CSS"
 msgstr ""
 
-#: .\home.html:152
+#: .\home.html:166
 msgid "What I'm Doing"
 msgstr ""
 
-#: .\home.html:153
+#: .\home.html:167
 msgid "I am a web developer with Python and Django."
 msgstr ""
 
-#: .\home.html:161
+#: .\home.html:175
 msgid ""
 "Design responsive,user-friendly websites with modern aesthetics,also "
 "provides an intuitive user experience."
 msgstr ""
 
-#: .\home.html:168
+#: .\home.html:182
 msgid "Development"
 msgstr ""
 
-#: .\home.html:169
+#: .\home.html:183
 msgid ""
 "Create secure and scalable web applications using Python and Django,"
 "emphasizing high performance and reliability."
 msgstr ""
 
-#: .\home.html:176
+#: .\home.html:190
 msgid "Social Media"
 msgstr ""
 
-#: .\home.html:177
+#: .\home.html:191
 msgid ""
 "In today's world, presence on social networks as well as website has a great "
 "impact on your business and introduction to customers."
 msgstr ""
 
-#: .\home.html:184
+#: .\home.html:198
 msgid "Branding"
 msgstr ""
 
-#: .\home.html:185
+#: .\home.html:199
 msgid ""
 "Having a website significantly increases the visibility and credibility of "
 "the business and provides a digital storefront to the audience."
 msgstr ""
 
-#: .\home.html:192
+#: .\home.html:206
 msgid "Strategy"
 msgstr ""
 
-#: .\home.html:193
+#: .\home.html:207
 msgid ""
 "Focus on increasing brand awareness, creating customer engagement, and "
 "achieving business goals."
 msgstr ""
 
-#: .\home.html:200
+#: .\home.html:214
 msgid "Consulting"
 msgstr ""
 
-#: .\home.html:201
+#: .\home.html:215
 msgid ""
 "Tailored solutions to enhance online presence, improve user experience,and "
 "achieve business goals effectively."
 msgstr ""
 
-#: .\home.html:218
+#: .\home.html:232
 msgid "Programming Languages"
 msgstr ""
 
-#: .\home.html:225
+#: .\home.html:239
 msgid "Successful Project"
 msgstr ""
 
-#: .\home.html:232
+#: .\home.html:246
 msgid "Certificates and Documents"
 msgstr ""
 
-#: .\home.html:239
+#: .\home.html:253
 msgid "Workshops and Training"
 msgstr ""
 
-#: .\home.html:256
+#: .\home.html:270
 msgid "Education"
 msgstr ""
 
-#: .\home.html:258
+#: .\home.html:272
 msgid "Degrees"
 msgstr ""
 
-#: .\home.html:260
+#: .\home.html:274
 msgid "Mathematics and physics Diploma."
 msgstr ""
 
-#: .\home.html:263
+#: .\home.html:277
 msgid "Computer Science Diploma."
 msgstr ""
 
-#: .\home.html:266
+#: .\home.html:280
 msgid "Programming Courses"
 msgstr ""
 
-#: .\home.html:268
+#: .\home.html:282
 msgid "HTML & CSS certificate."
 msgstr ""
 
-#: .\home.html:269 .\home.html:275 .\home.html:280
+#: .\home.html:283 .\home.html:289 .\home.html:294 .\home.html:299
 msgid "From"
 msgstr ""
 
-#: .\home.html:270 .\home.html:276 .\home.html:281 .\home.html:286
+#: .\home.html:284 .\home.html:290 .\home.html:295 .\home.html:300
 msgid "Cando"
 msgstr ""
 
-#: .\home.html:271
+#: .\home.html:285
 msgid " Computer Science Engineering institution."
 msgstr ""
 
-#: .\home.html:274
+#: .\home.html:288
 msgid "Python Foundation Master certificate."
 msgstr ""
 
-#: .\home.html:277 .\home.html:282 .\home.html:287
+#: .\home.html:291 .\home.html:296 .\home.html:301
 msgid "Computer Science Engineering institution."
 msgstr ""
 
-#: .\home.html:279
+#: .\home.html:293
 msgid "Python Advanced Master certificate."
 msgstr ""
 
-#: .\home.html:284
+#: .\home.html:298
 msgid "Django certificate."
 msgstr ""
 
-#: .\home.html:292
+#: .\home.html:306
 msgid "About me"
 msgstr ""
 
-#: .\home.html:294
+#: .\home.html:308
 msgid "Languages"
 msgstr ""
 
-#: .\home.html:297
-msgid "Turkish (Azerbaijan)"
-msgstr ""
-
-#: .\home.html:300
-msgid "Deutsch"
-msgstr ""
-
-#: .\home.html:303
-msgid "English"
-msgstr ""
-
-#: .\home.html:307
-msgid "Hobbies"
-msgstr ""
-
-#: .\home.html:308
-msgid "Traveling"
-msgstr ""
-
 #: .\home.html:309
-msgid "Gaming"
-msgstr ""
-
-#: .\home.html:310
-msgid "Meeting Family & Friends"
+msgid "Persian "
 msgstr ""
 
 #: .\home.html:311
-msgid "Music"
+msgid "Turkish (Azerbaijan)"
 msgstr ""
 
-#: .\home.html:312
-msgid "Pets"
-msgstr ""
-
-#: .\home.html:315
-msgid "Other Skills"
-msgstr ""
-
-#: .\home.html:316
-msgid "2019 to Present"
+#: .\home.html:314
+msgid "Deutsch"
 msgstr ""
 
 #: .\home.html:317
-msgid "- Accountant"
+msgid "English"
 msgstr ""
 
-#: .\home.html:318
-msgid "Working as an accountant in a private company."
+#: .\home.html:321
+msgid "Hobbies"
+msgstr ""
+
+#: .\home.html:322
+msgid "Traveling"
+msgstr ""
+
+#: .\home.html:323
+msgid "Gaming"
+msgstr ""
+
+#: .\home.html:324
+msgid "Meeting Family & Friends"
+msgstr ""
+
+#: .\home.html:325
+msgid "Music"
+msgstr ""
+
+#: .\home.html:326
+msgid "Pets"
+msgstr ""
+
+#: .\home.html:329
+msgid "Other Skills"
+msgstr ""
+
+#: .\home.html:330
+msgid "2019 to Present"
+msgstr ""
+
+#: .\home.html:331
+msgid "Accountant"
 msgstr ""
 
 #: .\home.html:332
+msgid "Working as an accountant in a private company."
+msgstr ""
+
+#: .\home.html:346
 msgid "Latest blogs"
 msgstr ""
 
-#: .\home.html:348
+#: .\home.html:362
 msgid "Continue Reading"
 msgstr ""
 
-#: .\home.html:358
+#: .\home.html:372
 msgid "See more ..."
 msgstr ""

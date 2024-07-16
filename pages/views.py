@@ -1,7 +1,7 @@
-from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.conf import settings
+from django.template import RequestContext
 
 from django.views.generic import *
 from .forms import ContactMessageForm
@@ -39,3 +39,7 @@ def ContactCreateView(request):
     else:
         form = ContactMessageForm()
     return render(request, 'home.html', {'form': form})
+
+
+def my_view(request):
+    return render(request, '_base.html')

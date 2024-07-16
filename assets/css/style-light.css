@@ -718,7 +718,6 @@ position:relative;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	border-radius: 30px;
-	font-weight: ;
 }
  .box .icon li a:hover{
      color: #fff;
@@ -799,7 +798,6 @@ background:#f0fbff;
 }
 .timeline_title::after {
 	content: "";
-	background: -o-radial-gradient(left,ellipse,#ddd 0%,rgba(255,255,255,0) 70%);
 	background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
 	width: 200px;
 	height: 2px;

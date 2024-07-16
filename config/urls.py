@@ -11,6 +11,6 @@ urlpatterns = [
                   path('set-language/', set_language, name='set_language'),
 
                   # Rosetta
-                  # path('rosetta/', include('rosetta.urls')),
+                  path('rosetta/', include('rosetta.urls')),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
